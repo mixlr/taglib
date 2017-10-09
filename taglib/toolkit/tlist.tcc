@@ -1,3 +1,9 @@
+// Ignore compiler warning when building with clang.
+// https://github.com/taglib/taglib/issues/436
+#ifdef __clang__
+#pragma clang diagnostic ignored "-Wdelete-non-virtual-dtor"
+#endif
+
 /***************************************************************************
     copyright            : (C) 2002 - 2008 by Scott Wheeler
     email                : wheeler@kde.org
